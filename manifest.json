@@ -1,0 +1,16 @@
+{
+  "short_name": "KidsPay",
+  "name": "KidsPay Play App",
+  "icons": [
+    {
+      "src": "images/KidsPayLogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0033",
+  "display": "standalone",
+  "orientation": "portrait"
+}

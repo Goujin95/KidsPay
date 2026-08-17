@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/KidsPayLogo.png">
+
+    <title>KidsPay</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="app-container">
+
+        <section id="phase-1" class="phase">
+            <div class="logo">
+                <img src="images/KidsPayLogo.png" alt="KidsPay Logo">
+            </div>
+            <button id="btn-to-scan" class="action-btn red-btn">
+                <img class="btn-icon" src="images/scanner.png" alt="Scan Icon">
+                <span>Scan QR</span>
+            </button>
+        </section>
+
+        <section id="phase-2" class="phase hidden">
+            <div class="top-banner">
+                <img src="images/KidsPayLogo banner version.png" alt="KidsPay Logo" class="banner-logo">
+            </div>
+            <h2>Scan Shop QR Code</h2>
+            <div id="qr-reader"></div>
+            <button id="btn-cancel-scan" class="action-btn gray-btn">Cancel</button>
+        </section>
+
+        <section id="phase-3" class="phase hidden">
+            <div class="top-banner">
+                <img src="images/KidsPayLogo banner version.png" alt="KidsPay Logo" class="banner-logo">
+            </div>
+            <div class="price-input-box">
+                <span class="currency">¥</span>
+                <input 
+                    type="number" 
+                    id="price-input" 
+                    inputmode="numeric" 
+                    placeholder="0" 
+                    min="0"
+                    step="1"
+                />
+            </div>
+            <button id="btn-to-confirm" class="action-btn blue-btn">Next</button>
+        </section>
+
+        <section id="phase-4" class="phase hidden">
+            <div class="top-banner">
+                <img src="images/KidsPayLogo banner version.png" alt="KidsPay Logo" class="banner-logo">
+            </div>
+            <div class="flip-180">
+                <h1 class="display-price">¥0</h1>
+            </div>
+            <button id="btn-pay" class="action-btn blue-btn">Pay Now</button>
+        </section>
+
+        <section id="phase-5" class="phase hidden">
+            <div class="top-banner">
+                <img src="images/KidsPayLogo banner version.png" alt="KidsPay Logo" class="banner-logo">
+            </div>
+            <div class="success-box">
+                <h1 class="paid-price">¥0</h1>
+                <span class="badge-success">Payment Completed</span>
+            </div>
+            <button id="btn-home" class="action-btn red-btn">
+                <img class="btn-icon" src="images/home.png" alt="Home Icon">
+                <span>Done</span>
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>

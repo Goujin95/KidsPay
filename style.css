@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    height: 100dvh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.phase {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.action-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.1s ease;
+}
+
+.action-btn:active {
+    transform: scale(0.97);
+}
+
+.red-btn { background-color: #ff0033; color: white; }
+.blue-btn { background-color: #019bfe; color: white; }
+.gray-btn { background-color: #e0e0e0; color: #333333; }
+
+#qr-reader {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.price-input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 3px solid #019bfe;
+    padding-bottom: 0.5rem;
+    width: 80%;
+}
+
+.price-input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    background: transparent;
+}
+
+.flip-180 {
+    transform: rotate(180deg);
+    padding: 1.5rem;
+}
+
+.display-price, .paid-price {
+    font-size: 3.5rem;
+    color: #222;
+    margin-bottom: 5rem;
+}
+
+.badge-success {
+    background-color: #13ad6d;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.top-banner {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 10;
+}
+
+.banner-logo {
+    height: 96px;
+    width: auto;
+    display: block;
+}
